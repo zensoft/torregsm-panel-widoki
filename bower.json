@@ -1,0 +1,31 @@
+{
+  "name": "torregsm-panel-widoki",
+  "description": "Statyczne widoki dla panelu torregsm",
+  "main": "index.js",
+  "authors": [
+    "Emilka i Tomek"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "bootstrap",
+    "4",
+    "gulp",
+    "starter",
+    "bower"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^v4.0.0-alpha.6",
+    "font-awesome": "^4.7.0",
+    "glyphicons": "^0.0.2",
+    "jquery": "^3.2.1",
+    "tether": "^1.4.3"
+  }
+}

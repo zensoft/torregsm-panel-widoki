@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}
+  Strona główna
+{% endblock %}
+
+{% block content %}
+
+  <div class="container">
+    <div class="row">
+
+      <h3>Produkty</h3>
+
+      <table class="table table-responsive">
+        <thead>
+          <tr>
+            <th scope="col">
+                <input name="name" value="" placeholder="Nazwa">
+            </th>
+            <th scope="col">
+              <input name="name" value="" placeholder="marka">
+            </th>
+            <th scope="col">Model</th>
+            <th scope="col">Kolor</th>
+            <th scope="col">Ilość</th>
+            <th scope="col">Kategoria</th>
+            <th scope="col">#</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dżeilkejs</td>
+            <td>Samsung</td>
+            <td>S6</td>
+            <td>Limonka</td>
+            <td> <span> + </span> 2 <span> - </span></td>
+            <td>Backase</td>
+            <td>
+              <a style="color:magenta" href="#">Pokaż</a>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+
+{% endblock %}

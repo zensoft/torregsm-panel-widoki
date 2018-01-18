@@ -1,0 +1,29 @@
+{
+  "name": "torregsm-panel-widoki",
+  "version": "1.0.0",
+  "description": "Statyczne widoki dla panelu torregsm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bootstrap",
+    "4",
+    "gulp",
+    "starter",
+    "bower"
+  ],
+  "author": "Emilka i Tomek",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-nunjucks": "^3.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-zip": "^4.0.0",
+    "yargs": "^10.1.1"
+  }
+}
