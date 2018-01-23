@@ -75,11 +75,6 @@
             </a>
         </li>
     </ul>
-
-    <ul class="list-unstyled CTAs">
-        <li><a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a></li>
-        <li><a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a></li>
-    </ul>
 </nav>
 
   <div id="content" class="container-fluid">
@@ -105,23 +100,30 @@
             </div>
       </div>
   </nav>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-
-      <h3>Produkty</h3>
-
-      <table class="table table-responsive">
+      <div class="col">
+        <h4>Produkty</h4>
+      </div>
+      <div class="col">
+        <div class="float-right">
+          <input type="search" class="form-control" placeholder="Wyszukaj produkt">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <table class="table table-hover">
         <thead>
           <tr>
             <th scope="col">
-                <input name="name" value="" placeholder="Nazwa">
+                <input type="text" class="form-control" placeholder="Nazwa">
             </th>
             <th scope="col">
-              <input name="name" value="" placeholder="marka">
+              <input type="text" class="form-control" placeholder="Marka">
             </th>
             <th scope="col">Model</th>
             <th scope="col">Kolor</th>
@@ -131,18 +133,55 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Dżeilkejs</td>
-            <td>Samsung</td>
-            <td>S6</td>
-            <td>Limonka</td>
-            <td> <span> + </span> 2 <span> - </span></td>
-            <td>Backase</td>
-            <td>
-              <a style="color:magenta" href="#">Pokaż</a>
-            </td>
-          </tr>
-
+          
+            <tr>
+                <td>Dżeilkejs</td>
+                <td>Samsung</td>
+                <td>S6</td>
+                <td>Limonka</td>
+                <td> <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> 3 <span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span></td>
+                <td>Backase</td>
+                <td>
+                  <a style="color:magenta" href="#">Pokaż</a>
+                </td>
+            </tr>
+          
+            <tr>
+                <td>Dżeilkejs</td>
+                <td>IPhone</td>
+                <td>6</td>
+                <td>Zielony</td>
+                <td> <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> 7 <span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span></td>
+                <td>Backase</td>
+                <td>
+                  <a style="color:magenta" href="#">Pokaż</a>
+                </td>
+            </tr>
+          
+            <tr>
+                <td>Ładowarka</td>
+                <td>Samsung</td>
+                <td>S6</td>
+                <td>Czarny</td>
+                <td> <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> 13 <span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span></td>
+                <td>Ładowarki</td>
+                <td>
+                  <a style="color:magenta" href="#">Pokaż</a>
+                </td>
+            </tr>
+          
+            <tr>
+                <td>Ładowarka</td>
+                <td>Iphone</td>
+                <td>S6</td>
+                <td>Czarny</td>
+                <td> <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> 14 <span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span></td>
+                <td>Ładowarki</td>
+                <td>
+                  <a style="color:magenta" href="#">Pokaż</a>
+                </td>
+            </tr>
+          
         </tbody>
       </table>
 

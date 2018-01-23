@@ -44,9 +44,51 @@ function getIndexData() {
   return indexData;
 }
 
+function getMainPageData() {
+  var data =  [
+    {
+      name: "Dżeilkejs",
+      brand: "Samsung",
+      model: "S6",
+      color: "Limonka",
+      qty: 3,
+      category: "Backase"
+    },
+    {
+      name: "Dżeilkejs",
+      brand: "IPhone",
+      model: "6",
+      color: "Zielony",
+      qty: 7,
+      category: "Backase"
+    },
+    {
+      name: "Ładowarka",
+      brand: "Samsung",
+      model: "S6",
+      color: "Czarny",
+      qty: 13,
+      category: "Ładowarki"
+    },
+    {
+      name: "Ładowarka",
+      brand: "Iphone",
+      model: "S6",
+      color: "Czarny",
+      qty: 14,
+      category: "Ładowarki"
+    }
+
+  ];
+  return {
+    products: data
+  }
+}
+
 function getViewsArgs() {
   var data = {};
   data.indexData = getIndexData();
+  data.mainPageData = getMainPageData();
   return data;
 }
 

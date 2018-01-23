@@ -6,19 +6,26 @@
 
 {% block content %}
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-
-      <h3>Produkty</h3>
-
-      <table class="table table-responsive">
+      <div class="col">
+        <h4>Produkty</h4>
+      </div>
+      <div class="col">
+        <div class="float-right">
+          <input type="search" class="form-control" placeholder="Wyszukaj produkt">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <table class="table table-hover">
         <thead>
           <tr>
             <th scope="col">
-                <input name="name" value="" placeholder="Nazwa">
+                <input type="text" class="form-control" placeholder="Nazwa">
             </th>
             <th scope="col">
-              <input name="name" value="" placeholder="marka">
+              <input type="text" class="form-control" placeholder="Marka">
             </th>
             <th scope="col">Model</th>
             <th scope="col">Kolor</th>
@@ -28,18 +35,19 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Dżeilkejs</td>
-            <td>Samsung</td>
-            <td>S6</td>
-            <td>Limonka</td>
-            <td> <span> + </span> 2 <span> - </span></td>
-            <td>Backase</td>
-            <td>
-              <a style="color:magenta" href="#">Pokaż</a>
-            </td>
-          </tr>
-
+          {% for item in mainPageData.products %}
+            <tr>
+                <td>{{ item.name }}</td>
+                <td>{{ item.brand }}</td>
+                <td>{{ item.model }}</td>
+                <td>{{ item.color }}</td>
+                <td> <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> {{ item.qty }} <span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span></td>
+                <td>{{ item.category }}</td>
+                <td>
+                  <a style="color:magenta" href="#">Pokaż</a>
+                </td>
+            </tr>
+          {% endfor %}
         </tbody>
       </table>
 
